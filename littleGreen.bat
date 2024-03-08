@@ -1,4 +1,4 @@
-@echo on
+@echo off
 set currentpath=%~dp0
 git pull
 for /l %%i in (1, 1, 2) do (
@@ -15,4 +15,4 @@ echo *         keeps your girlfriend away        *
 echo *                                           *
 echo *-----------------SUCCESS-------------------*
 echo ''
-pause 
+pause>nul
