@@ -6,11 +6,11 @@ for /l %%i in (1, 1, 2) do (
 	git push
 )
 echo
-echo ^|----------------SUCCESS--------------------^|
-echo ^|                                           ^|
-echo ^|                a commit a day             ^|
-echo ^|         keeps your girlfriend away        ^|
-echo ^|                                           ^|
-echo ^|-----------------SUCCESS-------------------^|
+echo *----------------SUCCESS--------------------*
+echo *                                           *
+echo *                a commit a day             *
+echo *         keeps your girlfriend away        *
+echo *                                           *
+echo *-----------------SUCCESS-------------------*
 echo
-pause
+pause 
