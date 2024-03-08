@@ -5,6 +5,8 @@ for /l %%i in (1, 1, 10) do (
 	git commit -m 'Greate'
 	git push
 )
-echo 'SUCCESS'
-echo a commit a day keeps your girlfriend away
+echo *----------------SUCCESS--------------------*
+echo *                a commit a day             *
+echo *         keeps your girlfriend away        *
+echo *-----------------SUCCESS-------------------*
 pause
