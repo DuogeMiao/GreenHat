@@ -14,7 +14,11 @@
 start "Green Project Luncher" "F:\Code\super-green-man\littleGreen.bat"
 ```
 
-### 如何在windows设置定时计划
+### 如何修改提交次数？
+提交次数影响gitee展示的颜色深度，提交20+基本就是深绿色了。想展示得自然点，可以在脚本里面把这个数量换成随机数。
+![输入图片说明](img/498649654165dcwdsaf.png)
+
+### 如何在windows设置定时计划？
 win+R，执行taskschd.msc就可以弹出定时计划窗口了。
 ![image-20240308174854576](img/image-20240308174854576.png)
 
