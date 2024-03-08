@@ -1,5 +1,5 @@
 git pull
-for i in {1..2}
+for i in {1..20}
 do
 	echo var a = $i > index.js
 	git add .

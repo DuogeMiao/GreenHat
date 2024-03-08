@@ -1,7 +1,7 @@
 @echo off
 cd /d %~dp0
 git pull
-for /l %%i in (1, 1, 2) do (
+for /l %%i in (1, 1, 20) do (
 	echo console.log^(Hello Git [%%i] %time%^); > index.js
 	git add .
 	git commit -m 'Greate'
@@ -13,4 +13,4 @@ echo *                a commit a day             *
 echo *         keeps your girlfriend away        *
 echo *                                           *
 echo *-----------------SUCCESS-------------------*
-timeout /nobreak /t 5
+timeout /nobreak /t 10
