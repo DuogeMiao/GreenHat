@@ -16,11 +16,11 @@ start "Green Project Luncher" "F:\Code\super-green-man\littleGreen.bat"
 
 ### 如何在windows设置定时计划
 win+R，执行taskschd.msc就可以弹出定时计划窗口了。
-![image-20240308174854576](F:\Code\super-green-man\img\image-20240308174854576.png)
+![image-20240308174854576](img/image-20240308174854576.png)
 
 触发器的频率按照自己的需要设置。
 
-![image-20240308175143780](F:\Code\super-green-man\img\image-20240308175143780.png)
+![image-20240308175143780](img/image-20240308175143780.png)
 
 点运行试试能不能正常提交到仓库。
 
