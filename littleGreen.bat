@@ -1,4 +1,5 @@
 @echo off
+git pull
 for /l %%i in (1, 1, 20) do (
 	echo console.log^(Hello Git [%%i] %time%^); > index.js
 	git add .
