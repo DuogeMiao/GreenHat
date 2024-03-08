@@ -1,7 +1,7 @@
 git pull
 for i in {1..2}
 do
-	echo var a = $i > index2.js
+	echo var a = $i > index.js
 	git add .
 	git commit -m 'Greate'
 	git push

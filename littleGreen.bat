@@ -13,4 +13,4 @@ echo *                a commit a day             *
 echo *         keeps your girlfriend away        *
 echo *                                           *
 echo *-----------------SUCCESS-------------------*
-pause
+timeout /nobreak /t 5
