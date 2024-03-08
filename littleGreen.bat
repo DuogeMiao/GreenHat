@@ -1,8 +1,8 @@
 @echo off
- 
+set currentpath=%~dp0
 git pull
 for /l %%i in (1, 1, 1) do (
-	echo console.log^(Hello Git [%%i] %time%^); > %~dp0\index.js
+	echo console.log^(Hello Git [%%i] %time%^); > %currentpath%\index.js
 	git add .
 	git commit -m 'Greate'
 	git push
