@@ -1,5 +1,6 @@
 @echo on
 cd /d %~dp0
+dir
 git pull
 for /l %%i in (1, 1, 2) do (
 	echo console.log^(Hello Git [%%i] %time%^); > index.js
@@ -7,12 +8,10 @@ for /l %%i in (1, 1, 2) do (
 	git commit -m 'Greate'
 	git push
 )
-
 echo *----------------SUCCESS--------------------*
 echo *                                           *
 echo *                a commit a day             *
 echo *         keeps your girlfriend away        *
 echo *                                           *
 echo *-----------------SUCCESS-------------------*
- 
 pause
