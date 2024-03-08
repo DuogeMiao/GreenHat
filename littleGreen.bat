@@ -1,4 +1,4 @@
-@echo off
+@echo on
 cd /d %~dp0
 git pull
 for /l %%i in (1, 1, 2) do (
