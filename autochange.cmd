@@ -13,5 +13,4 @@ echo |         keeps your girlfriend away        |
 echo |                                           |
 echo |-----------------SUCCESS-------------------|
 echo
-pause 
 pause
