@@ -1,13 +1,9 @@
 git pull
+#随机生成12-（12+18-1）的随机数 $(($RANDOM%(end-1)+start))
 count=$(($RANDOM%18+12))
 for((var=0;var<$count;var++))
-	do
-		echo $var
-	done
-for i in {1..$count}
 do
-	echo $i
-	echo var a = $i > index.js
+	echo var a = $var > index.js
 	git add .
 	git commit -m 'Greate'
 	git push
