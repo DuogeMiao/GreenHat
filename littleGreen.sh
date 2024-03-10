@@ -1,5 +1,6 @@
 git pull
-for i in {1..$(($RANDOM%18+12))}
+count = $(($RANDOM%18+12))
+for i in {1..$count}
 do
 	echo i
 	echo var a = $i > index.js
