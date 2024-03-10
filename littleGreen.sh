@@ -1,6 +1,7 @@
 git pull
-for i in {1..25}
+for i in {1..$(($RANDOM%18+12))}
 do
+	echo i
 	echo var a = $i > index.js
 	git add .
 	git commit -m 'Greate'
