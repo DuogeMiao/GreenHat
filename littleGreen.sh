@@ -1,5 +1,6 @@
 git pull
 count = $(($RANDOM%18+12))
+echo $count
 for i in {1..$count}
 do
 	echo i
