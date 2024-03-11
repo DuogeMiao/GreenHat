@@ -23,6 +23,16 @@ call littleGreen.bat
 ![输入图片说明](img/image12edcwerd.png)
 
 ### 如何在windows设置定时计划？
+
+#### ① 命令添加
+记得改 `F:\Code\GreenHat\green-hat\littleGreen.bat` 文件路径，
+daily - 执行频率，每天
+06:00 - 执行时间点
+```
+schtasks /create /tn "RunLittleGreen" /tr "F:\Code\GreenHat\green-hat\littleGreen.bat" /sc daily /st 06:00
+```
+
+#### ② 手动添加
 win+R，执行taskschd.msc就可以弹出定时计划窗口了。
 ![image-20240308174854576](img/image-20240308174854576.png)
 
