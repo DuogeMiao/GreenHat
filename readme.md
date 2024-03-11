@@ -7,10 +7,11 @@
 ### windows的开机启动脚本
 新建一个文本文档，将后缀改成bat格式，将脚本放在 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`路径下。
 
-将开机启动脚本里面 `F:\Code\super-green-man\littleGreen.bat` 的路径内容替换成我们项目里面 `littleGreen.bat` 的路径。
+将开机启动脚本里面 `F:\Code\GreenHat\green-hat` 的路径内容替换成我们项目里面 `littleGreen.bat` 的路径。
 
 ```
-start "Green Project Luncher" "F:\Code\super-green-man\littleGreen.bat"
+cd /d F:\Code\GreenHat\green-hat
+call littleGreen.bat
 ```
 
 ### 如何修改提交次数？
