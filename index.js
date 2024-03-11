@@ -1,1 +1,1 @@
-console.log(Hello Git [1] 11:58:56.01); 
+var a = 12
