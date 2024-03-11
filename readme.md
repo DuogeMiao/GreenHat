@@ -5,10 +5,9 @@
 * 也可以将项目clone到Linux，使用cron来定时执行 `littleGreen.sh` 脚本。
 
 ### windows的开机启动脚本
+新建一个文本文档，将后缀改成bat格式，将脚本放在 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`路径。
 
-开机启动的脚本放在 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`路径。
-
-根据自己的脚本路径去替换里面的内容。
+将开机启动脚本里面 `F:\Code\super-green-man\littleGreen.bat` 的路径内容替换成我们项目里面 `littleGreen.bat` 的路径。
 
 ```
 start "Green Project Luncher" "F:\Code\super-green-man\littleGreen.bat"
