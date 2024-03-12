@@ -8,9 +8,10 @@ for /l %%i in (1, 1, %count%) do (
 	echo var a = [%%i] > index.js
 	git add .
 	git commit -m 'Greate'
-	git push
 	echo index:%%i
 )
+git push
+
 echo *----------------SUCCESS--------------------*
 echo *                                           *
 echo *                a commit a day             *
