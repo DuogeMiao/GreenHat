@@ -19,6 +19,7 @@ call littleGreen.bat
 
 固定次数：
 ![输入图片说明](img/498649654165dcwdsaf.png)
+
 随机次数：
 ![输入图片说明](img/image12edcwerd.png)
 
