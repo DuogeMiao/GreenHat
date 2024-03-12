@@ -43,3 +43,8 @@ win+R，执行taskschd.msc就可以弹出定时计划窗口了。
 点运行试试能不能正常提交到仓库。
 
 ![输入图片说明](img/image3.png)
+
+### 提交了颜色发生变化？
+有提交记录，但是颜色没发生变化，请检查下本地电脑的git提交邮箱是否为gitee的账户提交邮箱。在项目文件夹下执行 `git config user.email` 检查下，不相同的话执行 `git config user.email 你的邮箱地址` 去修改当前项目的提交邮箱。`git config --global user.email` 是查看全局的git提交邮箱，我们就不去设置全局的邮箱了，只设置这个项目的。如果你要设置全局的提交邮箱，使用 `git config --global user.email 你的邮箱地址`。
+当然，你也可以修改gitee的提交邮箱。
+![输入图片说明](img/image123decqw.png)
