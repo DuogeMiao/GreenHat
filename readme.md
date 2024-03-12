@@ -17,11 +17,13 @@ call littleGreen.bat
 ### 如何修改提交次数？
 提交次数影响gitee展示的颜色深度，提交24次就是深绿色了。想展示得自然点，可以在脚本里面把这个数量换成随机数。
 
-固定次数：
-![输入图片说明](img/498649654165dcwdsaf.png)
-
 随机次数：
+
 ![输入图片说明](img/image12edcwerd.png)
+
+固定次数：
+
+将脚本里面的count赋值为固定值，比如24？
 
 ### 如何在windows设置定时计划？
 
@@ -29,6 +31,7 @@ call littleGreen.bat
 
 daily - 执行频率，每天
 06:00 - 执行时间点
+
 ```
 schtasks /create /tn "RunLittleGreen" /tr "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GreenHatLauncher.bat" /sc daily /st 06:00
 ```
