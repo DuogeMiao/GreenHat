@@ -5,9 +5,9 @@
 * 也可以将项目clone到Linux，使用cron来定时执行 `littleGreen.sh` 脚本。
 
 ### windows的开机启动脚本
-新建一个文本文档，将后缀改成bat格式，将脚本放在 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`路径下。
+新建一个文本文档，将后缀改成bat格式，我这里命名为 `GreenHatLauncher.bat`，将脚本放在 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`路径下。
 
-将开机启动脚本里面 `F:\Code\GreenHat\green-hat` 的路径内容替换成我们项目里面 `littleGreen.bat` 的路径。
+将开机启动脚本里面 `F:\Code\GreenHat\green-hat` 的路径内容替换成我们项目里面 `littleGreen.bat` 的路径。我们项目的路径不要有中文，以免出现各种问题。
 
 ```
 cd /d F:\Code\GreenHat\green-hat
@@ -17,20 +17,19 @@ call littleGreen.bat
 ### 如何修改提交次数？
 提交次数影响gitee展示的颜色深度，提交24次就是深绿色了。想展示得自然点，可以在脚本里面把这个数量换成随机数。
 
+固定次数：
+![输入图片说明](img/498649654165dcwdsaf.png)
 随机次数：
 ![输入图片说明](img/image12edcwerd.png)
-
-固定次数：
-将脚本里面的count赋值成一个固定值就行，比如24？
 
 ### 如何在windows设置定时计划？
 
 #### ① 命令添加
-记得改 `F:\Code\GreenHat\green-hat\littleGreen.bat` 文件路径，
+
 daily - 执行频率，每天
 06:00 - 执行时间点
 ```
-schtasks /create /tn "RunLittleGreen" /tr "F:\Code\GreenHat\green-hat\littleGreen.bat" /sc daily /st 06:00
+schtasks /create /tn "RunLittleGreen" /tr "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GreenHatLauncher.bat" /sc daily /st 06:00
 ```
 
 #### ② 手动添加
@@ -45,7 +44,6 @@ win+R，执行taskschd.msc就可以弹出定时计划窗口了。
 
 ![输入图片说明](img/image3.png)
 
-### 提交了颜色没有发生变化？
+### 提交了颜色发生变化？
 有提交记录，但是颜色没发生变化，请检查下本地电脑的git提交邮箱是否为gitee的账户提交邮箱。在项目文件夹下执行 `git config user.email` 检查下，不相同的话执行 `git config user.email 你的邮箱地址` 去修改当前项目的提交邮箱。`git config --global user.email` 是查看全局的git提交邮箱，我们就不去设置全局的邮箱了，只设置这个项目的。如果你要设置全局的提交邮箱，使用 `git config --global user.email 你的邮箱地址`。
 当然，你也可以修改gitee的提交邮箱。
-![输入图片说明](img/image123decqw.png)
