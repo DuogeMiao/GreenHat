@@ -7,9 +7,9 @@ do
 	echo var a = $var > index.js
 	git add .
 	git commit -m 'Greate'
-	git push
 	echo index\:$var
 done
+git push
 
 echo "*----------------SUCCESS--------------------*"
 echo "*                                           *"
