@@ -5,7 +5,7 @@ set count=%random%
 set /a count=count%%18+12
 echo total:%count%
 for /l %%i in (1, 1, %count%) do (
-	echo var a = [%%i] > index.js
+	echo var a = %%i > index.js
 	git add .
 	git commit -m 'Greate'
 	echo index:%%i
