@@ -1,3 +1,5 @@
+#进入脚本的目录
+cd `dirname $0`
 git pull
 #随机生成12-（12+18-1）的随机数 $(($RANDOM%(end-1)+start))
 count=$(($RANDOM%18+12))
