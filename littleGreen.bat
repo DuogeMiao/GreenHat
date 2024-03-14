@@ -18,4 +18,4 @@ echo *                a commit a day             *
 echo *         keeps your girlfriend away        *
 echo *                                           *
 echo *-----------------SUCCESS-------------------*
-timeout /nobreak /t 10
+::timeout /nobreak /t 10
